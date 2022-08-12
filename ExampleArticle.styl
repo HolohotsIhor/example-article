@@ -1,0 +1,28 @@
+.example-article
+	margin-bottom $x12
+
+	&__inner
+		padding-top $12
+		background-color $colorValue
+
+	&__description
+		margin $x2 0 $x4
+
+		@media (min-width $screen-lg)
+			margin 0 0 $x4
+
+	&__image
+		display inherit
+		max-height 278px
+		height 100%
+		width 100%
+
+		@media (min-width $screen-lg)
+			max-height auto
+
+		&-wrapper
+			display inherit
+			justify-content center
+
+			@media (min-width $screen-lg)
+				justify-content inherit
